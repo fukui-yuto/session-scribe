@@ -8,14 +8,6 @@
 
 ## インストール
 
-### 方法1: Skill として直接インストール
-
-```bash
-claude skill install github:yuto/session-scribe
-```
-
-### 方法2: 手動インストール
-
 1. リポジトリをクローン:
 
 ```bash
@@ -25,7 +17,8 @@ git clone https://github.com/yuto/session-scribe.git
 2. Claude Codeのskillsディレクトリにシンボリックリンクを作成:
 
 ```bash
-# Linuxの場合
+# Linux / macOS / Git Bash (Windows) の場合
+mkdir -p ~/.claude/skills
 ln -s /path/to/session-scribe ~/.claude/skills/session-scribe
 
 # Windowsの場合（管理者権限のコマンドプロンプト）
